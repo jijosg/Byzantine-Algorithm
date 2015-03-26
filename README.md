@@ -1,4 +1,4 @@
-Byzantine-Consensus
+**Byzantine-Consensus**
 
 1. Assumptions:
 
@@ -10,20 +10,22 @@ Byzantine-Consensus
 2. How to Build and Run:
   1. In the console, please navigate to the 'Byzantine' directory. It will have 'Byzantine-Build-Run.sh' script file.
   2. Run the following command to get the executable class files:
-  			./Byzantine-Build-Run.sh
-	3. The above command will compile the java classes, run the RMI Registry, run 4 server processes (those act both as server and client).
+	````    
+./Byzantine-Build-Run.sh
+````
+  3. The above command will compile the java classes, run the RMI Registry, run 4 server processes (those act both as server and client).
   4. These processes will have indexes as : 0 - Commander, 1,2,3 - Lieutenants. Please see the log messages for the activities happening at each process end.
-
 
 3. Run the Tests
 
-	1. Open another console.
-	2. Please navigate to the 'Byzantine' directory (same as in the step to Build and Run).
-	3. Run command as following:
-		mvn test
+  1. Open another console.
+  2. Please navigate to the 'Byzantine' directory (same as in the step to Build and Run).
+  3. Run command as following:
+	  ```
+    mvn test
+    ```
   4. This will run two test scenarios. The first scenario has maximum traitor count as 1 (Order=ATTACK), the second test has max traitor count as 1 (Order=RETREAT)
   5. Monitor the other console, where all the processes were running.
-
 
 4. The output of Step C and D 
 	
