@@ -20,13 +20,9 @@
 
   1. Open another console.
   2. Please navigate to the 'Byzantine' directory (same as in the step to Build and Run).
-  3. Run command as following:
-	  ```
-    mvn test
-    ```
+  3. Run command as following: ```mvn test```
   4. This will run two test scenarios. The first scenario has maximum traitor count as 1 (Order=ATTACK), the second test has max traitor count as 1 (Order=RETREAT)
   5. Monitor the other console, where all the processes were running.
 
 4. The output of Step C and D 
-	
-	1. The output of these 2 steps are included in files output1.txt and output2.txt respectively.
+  1. The output of these 2 steps are included in files output1.txt and output2.txt respectively.
