@@ -1,0 +1,6 @@
+#Do not modify this file, create 'network.cfg' and work with it.
+
+node.url = rmi://localhost/process1
+node.url = rmi://localhost/process2
+node.url = rmi://localhost/process3
+node.url = rmi://localhost/process4

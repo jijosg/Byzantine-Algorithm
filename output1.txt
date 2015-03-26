@@ -1,0 +1,76 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.bits:Byzantine:jar:1.0.0
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 85, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 52, column 21
+[WARNING] The expression ${pom.url} is deprecated. Please use ${project.url} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Byzantine 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Byzantine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Byzantine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Byzantine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Jijo\Downloads\Compressed\Byzantine\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Byzantine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Byzantine ---
+[INFO] Surefire report directory: C:\Users\Jijo\Downloads\Compressed\Byzantine\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.bits.byzantine.SimpleTest
+0    DEBUG org.apache.commons.configuration.PropertiesConfiguration  - FileName set to network.cfg
+0    DEBUG org.apache.commons.configuration.ConfigurationUtils  - ConfigurationUtils.locate(): base is null, name is network.cfg
+0    DEBUG org.apache.commons.configuration.DefaultFileSystem  - Could not locate file network.cfg at null: no protocol: network.cfg
+15   DEBUG org.apache.commons.configuration.ConfigurationUtils  - Loading configuration from the context classpath (network.cfg)
+15   DEBUG org.apache.commons.configuration.PropertiesConfiguration  - Base path set to file:///C:/Users/Jijo/Downloads/Compressed/Byzantine/target/classes/network.cfg
+717  DEBUG org.bits.byzantine.TestBThread  - ***Running process: 0
+733  DEBUG org.bits.byzantine.TestBThread  - ***Running process: 1
+733  DEBUG org.bits.byzantine.TestBThread  - ***Running process: 3
+733  DEBUG org.bits.byzantine.TestBThread  - ***Running process: 2
+1419 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 1
+1419 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 2
+1419 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 0
+1419 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 3
+11443 DEBUG org.apache.commons.configuration.PropertiesConfiguration  - FileName set to network.cfg
+11443 DEBUG org.apache.commons.configuration.ConfigurationUtils  - ConfigurationUtils.locate(): base is null, name is network.cfg
+11443 DEBUG org.apache.commons.configuration.DefaultFileSystem  - Could not locate file network.cfg at null: no protocol: network.cfg
+11443 DEBUG org.apache.commons.configuration.ConfigurationUtils  - Loading configuration from the context classpath (network.cfg)
+11443 DEBUG org.apache.commons.configuration.PropertiesConfiguration  - Base path set to file:///C:/Users/Jijo/Downloads/Compressed/Byzantine/target/classes/network.cfg
+11459 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 0
+11459 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 3
+11459 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 2
+11459 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 1
+12145 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 2
+12145 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 0
+12145 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 1
+12145 DEBUG org.bits.byzantine.TestBThread  - ***Running process: 3
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.447 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 27.549 s
+[INFO] Finished at: 2015-03-26T22:08:40+05:30
+[INFO] Final Memory: 5M/17M
+[INFO] ------------------------------------------------------------------------

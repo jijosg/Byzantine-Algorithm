@@ -1,0 +1,118 @@
+0    DEBUG org.apache.commons.configuration.PropertiesConfiguration  - FileName set to network.cfg
+0    DEBUG org.apache.commons.configuration.ConfigurationUtils  - ConfigurationUtils.locate(): base is null, name is network.cfg
+0    DEBUG org.apache.commons.configuration.DefaultFileSystem  - Could not locate file network.cfg at null: no protocol: network.cfg
+16   DEBUG org.apache.commons.configuration.ConfigurationUtils  - Loading configuration from the context classpath (network.cfg)
+16   DEBUG org.apache.commons.configuration.PropertiesConfiguration  - Base path set to jar:file:/C:/Users/Jijo/Downloads/Compressed/Byzantine/target/Byzantine-1.0.0.jar!/network.cfg
+141  DEBUG org.bits.byzantine.ProcessManager  - Process 0 is local.
+219  DEBUG org.bits.byzantine.ProcessManager  - Process 1 is local.
+234  DEBUG org.bits.byzantine.ProcessManager  - Process 2 is local.
+234  DEBUG org.bits.byzantine.ProcessManager  - Process 3 is local.
+51220 DEBUG org.bits.byzantine.DC_Byzantine  - [0] received order from 0, order: RETREAT
+51235 DEBUG org.bits.byzantine.DC_Byzantine  - [0] processing OrderMessage [order=RETREAT, maxTraitors=1, alreadyProcessed=[]] from 0
+51235 DEBUG org.bits.byzantine.DC_Byzantine  - [0] : Broadcasting order to others...
+51235 DEBUG org.bits.byzantine.DC_Byzantine  - [1] received order from 0, order: RETREAT
+51235 DEBUG org.bits.byzantine.DC_Byzantine  - [1] processing OrderMessage [order=RETREAT, maxTraitors=1, alreadyProcessed=[0]] from 0
+51251 DEBUG org.bits.byzantine.DC_Byzantine  - [2] received order from 1, order: RETREAT
+51251 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Traitors: 0
+51251 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 1
+51251 DEBUG org.bits.byzantine.DC_Byzantine  - [3] received order from 1, order: RETREAT
+51267 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Traitors: 0
+51267 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 1
+51267 DEBUG org.bits.byzantine.DC_Byzantine  - [2] received order from 0, order: RETREAT
+51267 DEBUG org.bits.byzantine.DC_Byzantine  - [2] processing OrderMessage [order=RETREAT, maxTraitors=1, alreadyProcessed=[0]] from 0
+51267 DEBUG org.bits.byzantine.DC_Byzantine  - [1] received order from 2, order: RETREAT
+51267 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Traitors: 0
+51267 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 1
+51282 DEBUG org.bits.byzantine.DC_Byzantine  - [3] received order from 2, order: RETREAT
+51282 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Traitors: 0
+51282 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 2
+51282 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Step waiting
+51501 DEBUG org.bits.byzantine.DC_Byzantine  - [3] received order from 0, order: RETREAT
+51501 DEBUG org.bits.byzantine.DC_Byzantine  - [3] processing OrderMessage [order=RETREAT, maxTraitors=1, alreadyProcessed=[0]] from 0
+51501 DEBUG org.bits.byzantine.DC_Byzantine  - [1] received order from 3, order: RETREAT
+51501 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Traitors: 0
+51501 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 2
+51501 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Step waiting
+51703 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Step ready
+51703 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Processing step with 0 traitors and 2 messages
+51703 DEBUG org.bits.byzantine.DC_Byzantine  - [1] processing OrderMessage [order=RETREAT, maxTraitors=0, alreadyProcessed=[0, 2]] from 2
+51703 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+51703 DEBUG org.bits.byzantine.DC_Byzantine  - [1]  - Majority Voting: RETREAT
+51703 DEBUG org.bits.byzantine.DC_Byzantine  - [1] processing OrderMessage [order=RETREAT, maxTraitors=0, alreadyProcessed=[0, 3]] from 3
+51703 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+51703 DEBUG org.bits.byzantine.DC_Byzantine  - [1]  - Majority Voting: RETREAT
+51703 DEBUG org.bits.byzantine.DC_Byzantine  - [2] received order from 3, order: RETREAT
+51703 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Traitors: 0
+51703 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 2
+51703 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Step waiting
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Step ready
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Processing step with 0 traitors and 2 messages
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [2] processing OrderMessage [order=RETREAT, maxTraitors=0, alreadyProcessed=[0, 1]] from 1
+51906 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [2]  - Majority Voting: RETREAT
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [2] processing OrderMessage [order=RETREAT, maxTraitors=0, alreadyProcessed=[0, 3]] from 3
+51906 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [2]  - Majority Voting: RETREAT
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [3] firstStep ready
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Step ready
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Processing step with 0 traitors and 2 messages
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [3] processing OrderMessage [order=RETREAT, maxTraitors=0, alreadyProcessed=[0, 1]] from 1
+51906 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [3]  - Majority Voting: RETREAT
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [3] processing OrderMessage [order=RETREAT, maxTraitors=0, alreadyProcessed=[0, 2]] from 2
+51906 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+51906 DEBUG org.bits.byzantine.DC_Byzantine  - [3]  - Majority Voting: RETREAT
+61962 DEBUG org.bits.byzantine.DC_Byzantine  - [0] received order from 0, order: ATTACK
+61962 DEBUG org.bits.byzantine.DC_Byzantine  - [0] processing OrderMessage [order=ATTACK, maxTraitors=1, alreadyProcessed=[]] from 0
+61962 DEBUG org.bits.byzantine.DC_Byzantine  - [0] : Broadcasting order to others...
+61962 DEBUG org.bits.byzantine.DC_Byzantine  - [1] received order from 0, order: ATTACK
+61962 DEBUG org.bits.byzantine.DC_Byzantine  - [1] processing OrderMessage [order=ATTACK, maxTraitors=1, alreadyProcessed=[0]] from 0
+61962 DEBUG org.bits.byzantine.DC_Byzantine  - [2] received order from 1, order: ATTACK
+61962 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Traitors: 0
+61962 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 1
+61977 DEBUG org.bits.byzantine.DC_Byzantine  - [3] received order from 1, order: ATTACK
+61977 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Traitors: 0
+61977 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 1
+61977 DEBUG org.bits.byzantine.DC_Byzantine  - [2] received order from 0, order: ATTACK
+61977 DEBUG org.bits.byzantine.DC_Byzantine  - [2] processing OrderMessage [order=ATTACK, maxTraitors=1, alreadyProcessed=[0]] from 0
+61977 DEBUG org.bits.byzantine.DC_Byzantine  - [1] received order from 2, order: ATTACK
+61977 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Traitors: 0
+61977 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 1
+61993 DEBUG org.bits.byzantine.DC_Byzantine  - [3] received order from 2, order: ATTACK
+61993 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Traitors: 0
+61993 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 2
+61993 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Step waiting
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Step ready
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [3] Processing step with 0 traitors and 2 messages
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [3] processing OrderMessage [order=ATTACK, maxTraitors=0, alreadyProcessed=[0, 1]] from 1
+62196 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [3]  - Majority Voting: RETREAT
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [3] processing OrderMessage [order=ATTACK, maxTraitors=0, alreadyProcessed=[0, 2]] from 2
+62196 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [3]  - Majority Voting: ATTACK
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [3] received order from 0, order: ATTACK
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [3] processing OrderMessage [order=ATTACK, maxTraitors=1, alreadyProcessed=[0]] from 0
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [1] received order from 3, order: ATTACK
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Traitors: 0
+62196 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 2
+62196 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Step waiting
+62398 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Step ready
+62414 DEBUG org.bits.byzantine.DC_Byzantine  - [1] Processing step with 0 traitors and 2 messages
+62414 DEBUG org.bits.byzantine.DC_Byzantine  - [1] processing OrderMessage [order=ATTACK, maxTraitors=0, alreadyProcessed=[0, 2]] from 2
+62414 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+62414 DEBUG org.bits.byzantine.DC_Byzantine  - [1]  - Majority Voting: ATTACK
+62414 DEBUG org.bits.byzantine.DC_Byzantine  - [1] processing OrderMessage [order=ATTACK, maxTraitors=0, alreadyProcessed=[0, 3]] from 3
+62414 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+62414 DEBUG org.bits.byzantine.DC_Byzantine  - [1]  - Majority Voting: ATTACK
+62430 DEBUG org.bits.byzantine.DC_Byzantine  - [2] received order from 3, order: ATTACK
+62430 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Traitors: 0
+62430 DEBUG org.bits.byzantine.Step  - Added message to Step with 0 traitors. Messages: 2
+62430 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Step waiting
+62632 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Step ready
+62632 DEBUG org.bits.byzantine.DC_Byzantine  - [2] Processing step with 0 traitors and 2 messages
+62632 DEBUG org.bits.byzantine.DC_Byzantine  - [2] processing OrderMessage [order=ATTACK, maxTraitors=0, alreadyProcessed=[0, 1]] from 1
+62632 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+62632 DEBUG org.bits.byzantine.DC_Byzantine  - [2]  - Majority Voting: ATTACK
+62632 DEBUG org.bits.byzantine.DC_Byzantine  - [2] processing OrderMessage [order=ATTACK, maxTraitors=0, alreadyProcessed=[0, 3]] from 3
+62632 DEBUG org.bits.byzantine.OrderSet  - Notifying other lieutenants...
+62632 DEBUG org.bits.byzantine.DC_Byzantine  - [2]  - Majority Voting: ATTACK
